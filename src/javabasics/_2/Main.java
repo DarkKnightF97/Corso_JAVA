@@ -12,7 +12,7 @@ public class Main {
      */
     public static void exercise1() {
         System.out.println("Exercise 1: ");
-        System.out.println("Hello (my name)!"); //<--- Edit this line
+        System.out.println("Hello Federico!"); //<--- Edit this line
     }
 
     /**
@@ -24,7 +24,7 @@ public class Main {
         System.out.println("\nExercise 2: ");
         System.out.print("Hello");
         //Write code underneath this
-
+        System.out.println(" Federico!");
         //Write code above this
     }
 
@@ -35,9 +35,9 @@ public class Main {
     public static void exercise3() {
         System.out.println("\nExercise 3: ");
         // Change the code below here
-        System.out.println("This should ");
-        System.out.println("all appear ");
-        System.out.println("on the same line");
+        System.out.print("This should ");
+        System.out.print("all appear ");
+        System.out.print("on the same line");
         // and above here
     }
 }
