@@ -53,7 +53,7 @@ public class Main {
         System.out.println("Has had lunch today?");
         System.out.println(hasHadLunchToday);
         double priceLunch = 8.99;
-        System.out.print("Price Lunch = ");
+        System.out.print("Price Lunch =  ");
         System.out.println(priceLunch);
     }
 }
