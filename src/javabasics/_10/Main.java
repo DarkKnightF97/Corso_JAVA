@@ -107,7 +107,7 @@ public class Main {
             System.out.println("F");
         }
         else if (isTestRetry){
-            System.out.println("C   ");
+            System.out.println("C");
         }
     }
 
