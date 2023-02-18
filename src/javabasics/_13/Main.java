@@ -29,12 +29,17 @@ public class Main {
         numbers.add(6);
         numbers.add(7);
         numbers.add(8);
+
+        System.out.println(numbers.get(0));
+
         numbers.remove(0);
         numbers.remove(0);
         numbers.remove(0);
 
+
+
         System.out.println(numbers.get(0));
-        //System.out.println(numbers.get(0));
+
 
     }
 

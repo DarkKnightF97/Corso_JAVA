@@ -135,6 +135,7 @@ public class Main {
             // Your fori loop here
             for (int times = 1;times<=10;times++){
                 System.out.println(timesTableNumber + "*" + times + "= " + timesTableNumber * times);
+
             }
         }
     }
