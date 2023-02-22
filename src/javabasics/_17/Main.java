@@ -31,9 +31,10 @@ public class Main {
         long questionableFundsEuro = 5_000_000_000l;
 
         //Add the questionable funds to your bank balance and print it out!
+        questionableFundsEuro = myBankBalanceEuro + questionableFundsEuro;
         System.out.println("My Euro in Banc : " + myBankBalanceEuro);
         System.out.println("An email has arrived: " + suspiciousEmailMessage);
-        System.out.println("My money now : " + questionableFundsEuro + myBankBalanceEuro);
+        System.out.println("My money now : " + questionableFundsEuro);
     }
 
     /**
