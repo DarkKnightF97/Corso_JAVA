@@ -63,17 +63,6 @@ public class Exercises {
      *    Bonus: Using an appropriate loop of your choice find the average age of our students.
      *
      *    Hint: use a double to stop automatic integer rounding
-     *
-     * Finalmente modifichiamo ancora una volta la nostra classe "Corso",
-     *
-     * Questa volta aggiungeremo un'altra variabile interna (campo o attributo) chiamata
-     *    studenti. Sarà una List<Student> chiamata students
-     *
-     * Copia il codice qui sopra e aggiungi gli studenti dell'esercizio 2
-     *
-     * Bonus: utilizzando un ciclo appropriato a tua scelta trova l'età media dei nostri studenti.
-     *
-     * Suggerimento: usa un double per interrompere l'arrotondamento automatico dei numeri interi
      */
 
 
