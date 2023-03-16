@@ -1,5 +1,6 @@
 package javabasics._17;
 
+import java.time.DayOfWeek;
 import java.time.LocalDate;
 
 public class Main {
@@ -50,7 +51,7 @@ public class Main {
      *
      *    2a: Someone's age -> byte
      *    2b: The age of a baby in months -> byte
-     *    2c: Money in a hedgefund in euros -> long
+     *    2c: Money in a hedgefund in euros -> double
      *    2d: Price of a good in euros on amazon.com -> float(?)
      *    2e: The exact weight of an apple measured by scientific equipment -> double
      *    2f: The number of kilometers from any 2 places in the world -> short
@@ -83,7 +84,20 @@ public class Main {
         } else {
             System.out.println("true");
         }
+        LocalDate tomorrow = LocalDate.of(2023, 4, 17);
+        System.out.println(tomorrow.getDayOfMonth());
 
+
+        LocalDate todayy = LocalDate.now();
+        DayOfWeek dayOfWeek = todayy.getDayOfWeek();
+        System.out.println("Today is " + dayOfWeek);
+
+        LocalDate capodanno24 = LocalDate.of(2024,1,1);
+        System.out.println(capodanno24.getDayOfYear() + " gennaio 2024");
+
+        LocalDate date = LocalDate.now();
+        int monthValue = date.getMonthValue();
+        System.out.println("The numerical value of the current month is: " + monthValue);
     }
 
 }
