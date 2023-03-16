@@ -49,8 +49,9 @@ public class Student {
     public void setAge(int age){
         if(age <0 ){
             System.out.println("ERROR");
+        } else {
+            this.age = age;
         }
-        this.age = age;
     }
     public String getGender(){
         return gender;
