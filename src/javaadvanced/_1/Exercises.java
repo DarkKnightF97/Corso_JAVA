@@ -94,8 +94,8 @@ public class Exercises {
 
         for (Integer number : numbers) {
             // Your code
-            Math.min(number, min);
-            Math.max(number, max);
+            min = Math.min(number, min);
+            max = Math.max(number, max);
         }
 
         if (max != 10 || min != 1) {
