@@ -1,4 +1,5 @@
 package javaoop.exercises._1;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -21,21 +22,22 @@ public class Exercises {
 
     /**
      * 2: use the class called 'Student', add variables
-     *    (class variables are called 'fields' or 'attributes')
-     *    called 'name' and 'age'
-     *
-     *    Using the function below set the student name and ages
-     *
+     * (class variables are called 'fields' or 'attributes')
+     * called 'name' and 'age'
+     * <p>
+     * Using the function below set the student name and ages
      */
     private static void exercise2() {
         System.out.println("Exercise 2:");
         List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
+        List<Student> students = new ArrayList<>();
 
         // Use a for i loop
         for (int i = 0; i < studentNames.size(); i++) {
-            createNewStudent(studentNames.get(i), studentAges.get(i));
-            System.out.println(createNewStudent(studentNames.get(i), studentAges.get(i)));
+            Student student = createNewStudent(studentNames.get(i), studentAges.get(i));
+            students.add(student);
+            System.out.println(student.name + " is " + student.age + " years old.");
         }
 
 
@@ -70,13 +72,29 @@ public class Exercises {
         System.out.println("\nExercise 3:");
         List<Integer> studentAges = Arrays.asList(23, 31, 38);
         // Write your code here
-        double averageStudentAge = 0;
-        for ( int i = 0; i < studentAges.size(); i++){
-            averageStudentAge += studentAges.get(i);
-        }
-        double total = averageStudentAge / studentAges.size();
-        System.out.println(total);
+        Course course = new Course();
+        course.courseName = "Java Programming";
+        course.maxStudents = 30;
+        course.qualityRatingOutOf10 = 9.5;
+        course.instructor = "Marco Adriani";
+        course.roomNumber = "Room 97";
+        course.students = new ArrayList<>();
+
+        List<String> studentNames = Arrays.asList("Alice", "Aragon", "Alex");
+
+
+        for (int i = 0; i < studentNames.size(); i++) {
+            Student student = createNewStudent(studentNames.get(i), studentAges.get(i));
+            course.students.add(student);
         }
 
+        double totalAge = 0;
+        for (Student student : course.students) {
+            totalAge += student.age;
+        }
+        double averageAge = totalAge / course.students.size();
+        System.out.println("The average age of the students is: " + averageAge);
+
     }
+}
 
