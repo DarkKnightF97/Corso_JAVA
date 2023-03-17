@@ -21,20 +21,21 @@ public class Exercises {
         List<String> list = new ArrayList<>(Arrays.asList("a", "b", "c", "a", "b", "c", "a", "b", "c"));
 
         // Your code here
-        List<String> newList = new HashSet<>(list).stream().distinct().toList();
-
-        if (newList.size() == 3) {
-            System.out.println("Exercise 1: Success");
+        Set<String> set = new HashSet<>(list);
+        List<String> newList = new ArrayList<>(set);
+        System.out.println(newList);
+        if (newList.size() == 3){
+            System.out.println("OK");
         } else {
-            System.out.println("Exercise 1: Failed");
+            System.out.println("Not OK");
         }
     }
 
     /**
      * 2: Write a method that takes a List of Strings or a Set of Strings and returns a Set of Strings.
      *    the method should take a collection as a parameter
-     *    Scrivere un metodo che accetta un elenco di stringhe o un insieme di stringhe e restituisce un insieme di stringhe.
-     *      * Il metodo deve accettare un insieme come parametro
+     *    Scrivere un metodo che accetta una list di stringhe o un set di stringhe e restituisce un set di stringhe.
+     *      * Il metodo deve accettare una collection come parametro
      */
     private static void exercise2() {
         // Your code here
@@ -64,8 +65,22 @@ public class Exercises {
         // and store the counts in the Map `wordCount`, note you will need to first get the previous value
         // from the Map and then increment it by 1, if no previous value exists, use 0 as the previous value.
 
+
+
         // Your code here
-        // Attendo spiegazioni dal tutor perchè ho molta confusione
+        for (String word : words) {
+            int count = wordCount.getOrDefault(word, 0);
+            wordCount.put(word, count + 1);
+        }
+        System.out.println(wordCount);
+        /*Ho utilizzato un ciclo for each per iterare tutte le parole contenute nell'arraystream "words",
+        dopodichè ho istanziato una variabile int "count" che sfrutta il metodo getOrDefault che restituisce un valore se la chiave esiste
+        o 0 se non esiste. Infine ho usato il metodo "put" affinchè mi mandi in output le parole contenute nella mappa wordCount e il numero
+        di volte che vengono utilizzate attravrso il + 1 se sono già utilizzate.
+        Ho capito bene?
+         */
+
+
     }
 
     /**
