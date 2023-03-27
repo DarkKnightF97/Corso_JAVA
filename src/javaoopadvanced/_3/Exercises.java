@@ -34,7 +34,7 @@ public class Exercises {
      * Create 2 people and print out their hashcodes
      */
     private static void exercise2() {
-        System.out.println("\nExercise 1: ");
+        System.out.println("\nExercise 2: ");
         // Your code here
         Person person2 = new Person("Marco", 40,"Via Roma");
         System.out.println("Hashcode person 2: "+ person2.hashCode());
